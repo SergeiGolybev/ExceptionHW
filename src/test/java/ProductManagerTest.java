@@ -68,7 +68,7 @@ public class ProductManagerTest {
         repository.add(book1);
         repository.add(smartphone1);
         repository.add(book2);
-        assertThrows(AlreadyExistsException.class,() -> {
+        assertThrows(AlreadyExistsException.class, () -> {
             repository.add(new Book(3, "Black Sails", 3001, "A.Blue"));
         });
     }

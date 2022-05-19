@@ -12,7 +12,7 @@ public class Repository {
 
         for (Product tmp : products) {
             if (product.getId() == tmp.getId()) {
-                throw new AlreadyExistsException ("Product with this id already exists");
+                throw new AlreadyExistsException("Product with this id already exists");
             }
         }
 
